@@ -16,7 +16,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "webpack -p --progress",
-    "start:dev": "webpack-serve ./webpack.config.js --no-reload --content ./build --port 4000"
+    "start": "webpack-serve ./webpack.config.js --no-reload --content ./build --port 4000"
   },
   "author": "",
   "license": "ISC"
