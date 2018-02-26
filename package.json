@@ -16,7 +16,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "webpack -p --progress",
-    "start": "node app.js"
+    "start": "node pixi_graph.js"
   },
   "author": "",
   "license": "ISC"

@@ -1,7 +1,7 @@
 var width = 1200,
     height = 900;
 
-var scale = 6;
+var scale = 4;
 var PIXI = require('pixi.js');
 var d3 = require('d3');
 
@@ -25,7 +25,7 @@ d3.json("test.json", function(error, data) {
 
 function graphBuild() {
     document.body.appendChild(renderer.view);
-    pixiCanvas.call(d3.zoom().scaleExtent([-6, 1]).on("zoom", zoom));
+    pixiCanvas.call(d3.zoom().scaleExtent([-scale, 1]).on("zoom", zoom));
 
     function zoom() {
         var transform = d3.event.transform;
@@ -88,7 +88,7 @@ function graphBuild() {
             stroke: '#ffffff',
             strokeThickness: 6
         });
-        var radius = 16;
+        var radius = 12;
         var circle = new PIXI.Graphics();
         circle.beginFill(0xe74c3c);
         circle.lineStyle(5, 0xffffff, 0.5);
